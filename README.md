@@ -29,14 +29,23 @@ Settings:
 
 ## Create Install USB
 
-Disk Utility > Select USB device > Erase
+Remember to erase the whole disk, not only the volume
 
-- Name: HighSierraInstaller
+> Disk Utility > View > Show all devices > Select USB device > Erase
+
+- Name: USB
 - Format: Mac OS Extended (Journaled)
 
 You may need to do this twice if you encounter an error in the first time
 
 Open the Terminal
 
-`sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/HighSierraInstaller --applicationpath /Applications/Install\ macOS\ High\ Sierra.app --nointeraction`
+`sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ macOS\ High\ Sierra.app --nointeraction`
 
+Install Clover
+
+- Location: HighSierraInstaller
+- Customize:
+    - EFI
+
+Overwrite CLOVER folder with the on in the repo
