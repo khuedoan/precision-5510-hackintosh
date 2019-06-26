@@ -25,7 +25,8 @@ SM961 512GB
 
 Settings:
 
-- 
+- SATA mode: AHCI
+- Secure boot: disable
 
 ## Create Install USB
 
@@ -44,8 +45,16 @@ Open the Terminal
 
 Install Clover
 
-- Location: HighSierraInstaller
+- Location: Install macOS High Sierra
 - Customize:
-    - EFI
+    - Clover for UEFI booting only
 
-Overwrite CLOVER folder with the on in the repo
+Overwrite CLOVER folder with the one in the repo
+
+## Install macOS
+
+Format disk to Mac OS Extended, install, then boot with Clover
+
+Install Clover on new macOS installation, then overwrite CLOVER folder
+
+Install wifi driver
