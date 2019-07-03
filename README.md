@@ -53,8 +53,10 @@ Overwrite CLOVER folder with the one in the repo
 
 ## Install macOS
 
-Format disk to Mac OS Extended, install, then boot with Clover
+Format disk to Mac OS Extended, install, then boot with Clover in USB
 
 Install Clover on new macOS installation, then overwrite CLOVER folder
 
-Install wifi driver
+## Post Installation
+
+TODO: Install audio driver and wifi driver
