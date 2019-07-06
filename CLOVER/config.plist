@@ -464,9 +464,7 @@
 	<key>CPU</key>
 	<dict>
 		<key>HWPEnable</key>
-		<true/>
-		<key>HWPValue</key>
-		<string>0x94002301</string>
+		<false/>
 		<key>Type</key>
 		<string>0x05A5</string>
 		<key>UseARTFrequency</key>
