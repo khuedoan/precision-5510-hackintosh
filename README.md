@@ -59,4 +59,21 @@ Install Clover on new macOS installation, then overwrite CLOVER folder
 
 ## Post Installation
 
+### HDMI
+
+`sudo vim /System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist`
+
+Add these lines under `ConfigMap->dict`
+
+```
+<key>Mac-A5C67F76ED83108C</key>
+<string>none</string>
+```
+
+Then rebuild the cache
+
+`sudo kextcache -i /`
+
+Reboot
+
 TODO: Install audio driver and wifi driver
